@@ -1,0 +1,288 @@
+/*Estilo do corpo*/
+
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, white, green);
+    color: black;
+    flex-direction: column;
+}
+
+/*Cabeçalho*/
+
+header {
+    background: url('folclore-brasileiro.png') no-repeat center center / cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+section{
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-shadow: 5px 5px 5px orange;
+}
+
+/*A Navegação*/
+
+nav {
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+nav a {
+    border: 1px solid;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgb(47, 155, 223);
+}
+
+/*Conteúdo Principal*/
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    flex: 1;
+    overflow: visible;
+
+}
+
+main h2 {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+main p {
+    line-height: 2rem;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/*Rodapé*/
+
+footer {
+    background-color: lightskyblue;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    margin-top: 0;
+}
+
+
+/*Botão*/
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+/*Estilo do botão*/
+.btn-mais {
+    background-color: lightskyblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efeito quando passar o mouse por cima*/
+.btn-mais:hover {
+    background-color: rgb(47, 155, 223);
+}
+
+/* Estilo ao clicar */
+.btn-mais:active {
+    background-color: rgb(35, 125, 180);
+}
+
+
+/* Estilo para telas de 1024px */
+
+@media (max-width: 1024px) {
+
+    /*corpo*/
+    body {
+        font-size: 16px;
+    }
+
+    /*Cabeçalho*/
+    header {
+        padding: 80px 15px;
+    }
+
+    header h1 {
+        font-size: 4rem;
+    }
+
+    /*Navegação*/
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    /*Conteúdo Principal*/
+    main {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    main h2 {
+        font-size: 1.8rem;
+    }
+
+    main p {
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+
+    /*Rodapé*/
+    footer {
+        padding: 10px 5px;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Estilo para telas de 768px */
+@media (max-width: 768px) {
+
+    /* Corpo */
+    body {
+        font-size: 14px;
+    }
+
+    /*Cabeçalho*/
+    header {
+        padding: 60px 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        text-shadow: 3px 3px 3px orange;
+    }
+
+    /*Navegação*/
+    nav {
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        margin: 5px 10px;
+        padding: 8px 10px;
+    }
+
+    /*Conteúdo Principal*/
+    main {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    main p {
+        font-size: 0.95rem;
+        line-height: 1.5rem;
+    }
+
+    ul {
+        margin-left: 15px;
+    }
+
+    /* Rodapé */
+    footer {
+        font-size: 0.8rem;
+        padding: 8px 5px;
+    }
+}
+
+
+/* Estilo para telas de 320px */
+@media (max-width: 320px) {
+
+    /*O corpo*/
+    body {
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+    }
+
+    /*Cabeçalho*/
+    header {
+        padding: 40px 5px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+        text-shadow: 2px 2px 2px orange;
+    }
+
+    /*Navegação*/
+    nav {
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+        margin: 3px 5px;
+        padding: 5px 8px;
+    }
+
+    /*Conteúdo Principal*/
+    main {
+        padding: 5px;
+        max-width: 100%;
+    }
+
+    main h2 {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+
+    main p {
+        font-size: 0.85rem;
+        line-height: 1.3rem;
+    }
+
+    ul {
+        margin-left: 10px;
+        font-size: 0.85rem;
+    }
+
+    /*O rodapé*/
+    footer {
+        font-size: 0.7rem;
+        padding: 5px 2px;
+    }
+}
